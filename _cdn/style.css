@@ -6,7 +6,7 @@ HEADER NAV
     background-color: #2D3142;
 }
 
-.main_header .main_header_content{
+.main_header .main_header_content {
     max-width: 1300px;
     margin: 0 auto;
     display: flex;
@@ -18,13 +18,13 @@ HEADER NAV
     width: 290px;
 }
 
-.main_header .main_header_content .main_header_content_menu{
+.main_header .main_header_content .main_header_content_menu {
     flex-basis: calc(100% - 330px);
     display: flex;
     justify-content: flex-end;
 }
 
-.main_header_content_menu ul{
+.main_header_content_menu ul {
     display: flex;
     align-items: stretch;
 }
@@ -72,7 +72,7 @@ HEADER
     text-align: center;
 }
 
-.main_cta .main_cta_content p{
+.main_cta .main_cta_content p {
     font-size: 1.875em;
     color: #FFF;
     font-weight: 300;
@@ -133,7 +133,7 @@ BLOG
     width: 100%;
 }
 
-.main_blog article p{
+.main_blog article p {
     margin: 10px 0;
 }
 
@@ -142,7 +142,7 @@ BLOG
     color: #D36833;
 }
 
-.main_blog article h2{
+.main_blog article h2 {
     font-weight: 300;
     font-size: 1.2em;
 }
@@ -151,5 +151,60 @@ BLOG
     color: #333;
 }
 
+/*
+OPTIN
+ */
+.main_optin {
+    width: 100%;
+    background-color: #2D3142;
+    margin: 20px 0;
+}
+
+.main_optin_content {
+    max-width: calc(1300px - 40px);
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.main_optin_content header, .main_optin_content form {
+    flex-basis: 50%;
+}
+
+.main_optin_content header h1, .main_optin_content header p {
+    color: #FFF;
+    margin-right: 20px;
+    text-align: right;
+}
+
+.main_optin_content header h1 {
+    font-size: 1.25em;
+    font-weight: 400;
+}
+
+.main_optin_content header p {
+    font-weight: 300;
+    font-size: 0.875em;
+}
+
+.main_optin_content form {
+    display: flex;
+    justify-content: space-between;
+}
+.main_optin_content form input[type=text], .main_optin_content form input[type=email]{
+    flex-basis: 37%;
+    border-radius: 10px;
+    border: none;
+    padding: 0 10px;
+}
+
+.main_optin_content form button {
+    flex-basis: 20%;
+    border-radius: 10px;
+    border: none;
+    background-color: #D36833;
+    color: #FFF;
+    font-size: 0.876em;
+}
 
 
