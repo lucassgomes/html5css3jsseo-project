@@ -557,7 +557,7 @@ FOOTER
  */
 .main_footer {
     max-width: 1300px;
-    padding: 40px 0;
+    padding: 40px 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -706,7 +706,7 @@ MENU MOBILE
         text-align: center;
     }
 
-    .main_optin_content form input[type=text], .main_optin_content form input[type=email]{
+    .main_optin_content form input[type=text], .main_optin_content form input[type=email] {
         padding: 6px 12px;
     }
 
@@ -764,6 +764,32 @@ MENU MOBILE
         font-size: 0.9em;
         line-height: 2em;
     }
+
+    .main_tutor_social {
+        max-width: 80%;
+    }
+
+    .main_tutor_social h2 {
+        margin-bottom: 20px;
+    }
+
+    .main_tutor_social > article {
+        flex-basis: 49%;
+        margin-top: 20px;
+    }
+
+    .main_footer > header h1 {
+        text-align: center;
+    }
+
+    .main_footer_pages, .main_footer_links {
+        flex-basis: calc(50% - 10px);
+    }
+
+    .main_footer_about {
+        flex-basis: 100%;
+        margin-top: 20px;
+    }
 }
 
 /**
@@ -778,7 +804,7 @@ MENU MOBILE
         flex-wrap: wrap;
     }
 
-    .main_optin_content form input[type=text], .main_optin_content form input[type=email]{
+    .main_optin_content form input[type=text], .main_optin_content form input[type=email] {
         flex-basis: 100%;
         margin-bottom: 10px;
     }
@@ -787,9 +813,11 @@ MENU MOBILE
         margin: 0 auto;
         padding: 6px 12px;
     }
+
     .main_course_rating_content_title h2 {
         font-size: 1.2em;
     }
+
     .main_course_rating_content_comment > header {
         font-size: 1.2em;
     }
@@ -798,6 +826,16 @@ MENU MOBILE
         flex-basis: 100%;
     }
 }
+
+/**
+580px
+ */
+@media (max-width: 36em){
+    .main_tutor_social > article {
+        flex-basis: 100%;
+    }
+}
+
 /**
 520px
  */
