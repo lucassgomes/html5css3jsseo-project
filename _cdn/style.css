@@ -272,6 +272,7 @@ REVIEWS
 
 .main_course_rating_content {
     max-width: 1300px;
+    padding: 0 20px;
     margin: 0 auto;
 }
 
@@ -329,6 +330,7 @@ ESCOLA
 
 .main_school_content {
     max-width: 1300px;
+    padding: 0 20px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -707,6 +709,21 @@ MENU MOBILE
     .main_optin_content form input[type=text], .main_optin_content form input[type=email]{
         padding: 6px 12px;
     }
+
+    .main_school_content_left {
+        flex-basis: 100%;
+    }
+
+    .main_school_content_rigth {
+        flex-basis: 200px;
+        max-width: 200px;
+        padding: 20px;
+    }
+
+    .main_school_address {
+        flex-basis: calc(100% - 200px);
+        margin: auto;
+    }
 }
 
 /**
@@ -736,6 +753,17 @@ MENU MOBILE
     .main_blog article {
         flex-basis: calc(33% - 10px);
     }
+
+    .main_course_rating_content_title h2 {
+        font-size: 2em;
+    }
+
+    .main_school_list > article {
+        flex-basis: 100%;
+        margin: 10px 0;
+        font-size: 0.9em;
+        line-height: 2em;
+    }
 }
 
 /**
@@ -758,6 +786,28 @@ MENU MOBILE
     .main_optin_content form button {
         margin: 0 auto;
         padding: 6px 12px;
+    }
+    .main_course_rating_content_title h2 {
+        font-size: 1.2em;
+    }
+    .main_course_rating_content_comment > header {
+        font-size: 1.2em;
+    }
+
+    .main_course_rating_content_comment > article {
+        flex-basis: 100%;
+    }
+}
+/**
+520px
+ */
+@media (max-width: 32em) {
+    .main_school_content_rigth {
+        display: none;
+    }
+
+    .main_school_address {
+        flex-basis: 100%;
     }
 }
 
